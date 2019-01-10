@@ -1,5 +1,5 @@
 {
-  "main": "node_modules/expo/AppEntry.js",
+  "main": "src/index.js",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -7,13 +7,17 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@expo/vector-icons": "^9.0.0",
+    "axios": "^0.18.0",
     "expo": "^32.0.0",
+    "mobx": "^5.8.0",
+    "mobx-react": "^5.4.3",
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
-    "react-redux": "^6.0.0",
-    "redux": "^4.0.1"
+    "react-native-elements": "^0.19.1"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.2.3",
     "babel-preset-expo": "^5.0.0"
   },
   "private": true
