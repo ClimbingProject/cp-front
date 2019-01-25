@@ -8,9 +8,8 @@ export default class HomeScreen extends React.Component {
     const { width } = Dimensions.get("window");
     return (
       <View>
-        <NavigationBar />
         <PostList />
-        <TabBarIOS />
+        {/* <TabBarIOS /> */}
       </View>
     );
   }

@@ -5,6 +5,7 @@ import { Video, Icon } from "expo";
 export default class Post extends React.Component {
   render() {
     const { width } = Dimensions.get("window");
+    console.log(this.props);
     return (
       <View style={styles.post}>
         <View style={styles.header}>
@@ -17,7 +18,7 @@ export default class Post extends React.Component {
         </View>
         <Video
           source={{
-            uri: "http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4"
+            uri: this.props.uri
           }}
           shouldPlay
           resizeMode="cover"

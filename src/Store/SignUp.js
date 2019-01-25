@@ -30,7 +30,7 @@ export default class SignUpStore {
         console.log("sucess");
       })
       .catch(e => {
-        this.errors.push(e);
+        console.log(e);
       });
   }
 }

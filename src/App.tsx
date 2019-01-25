@@ -1,13 +1,15 @@
-import React from "react";
+import React, { Component } from "react";
 import { View } from "react-native";
 import HomeScreen from "./containers/HomeScreen";
 import SignUp from "./containers/SignUp";
+import RouterComponent from "./Router";
 
-export default class App extends React.Component {
+interface Props {}
+export default class App extends Component<Props> {
   render() {
     return (
-      <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-        <SignUp />
+      <View style={{ flex: 1, backgroundColor: "#fff" }}>
+        <RouterComponent />
       </View>
     );
   }
